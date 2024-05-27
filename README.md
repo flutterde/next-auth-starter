@@ -14,7 +14,7 @@ copy the .env.exaple
 cp .env.example .env.local
 ```
 
-add the required data to you .env
+add the required data to your .env
 
 create this table in your Postgres database(this is a supabase database):
 

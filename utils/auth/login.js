@@ -33,7 +33,7 @@ const loginUser = async (email, password) => {
         console.log("=====>>> User Hash: ", user.password);
         const match = await comparePassword(password, user.password);
         console.log("=====>>> Match: ", match);
-        if (!match) {
+        if (!match || !user.is_verified) {
             console.log("=====>>> Invalid email or password");
             return ({ is_success: false, error: "Invalid email or password" });
         }
