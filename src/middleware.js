@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import { cookies } from 'next/headers';
 import * as jose from 'jose';
 
-const isProtected = ['/', '/profile', '/dashboard', '/logout'];
+const isProtected = ['/', '/profile', '/dashboard', '/logout', '/add-todo'];
 const authRoutes = ['/auth/login', '/auth/register'];
 const apiProtectedRoutes = ['/api/posts', '/api/profile'];
 
